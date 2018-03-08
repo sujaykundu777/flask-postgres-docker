@@ -3,5 +3,6 @@ MAINTAINER Sujay Kundu "sujay@skillenza.com"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-ENTRYPOINT ["python"]
+EXPOSE 5000
+ENTRYPOINT ["python3"]
 CMD ["app.py"]
